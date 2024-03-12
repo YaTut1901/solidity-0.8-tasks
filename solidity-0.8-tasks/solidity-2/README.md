@@ -1,4 +1,0 @@
-#  Hello World | Solidity 0.8 
-This Solidity contract is a simple example called "HelloWorld." It is written in version 0.8.22 of the Solidity programming language. The contract defines a state variable named myString of type string and declares it as public. The public keyword automatically generates a getter function, allowing external parties to read the value of myString.
-
-The assigned initial value to myString is "hello world." This variable is visible on the Ethereum blockchain, and anyone can query it using the generated getter function. The contract does not contain any functions to modify the state of myString or perform additional actions. The SPDX-License-Identifier at the beginning specifies that the contract code is released under the MIT license.
