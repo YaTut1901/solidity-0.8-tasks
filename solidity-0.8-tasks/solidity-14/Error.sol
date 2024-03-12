@@ -2,12 +2,12 @@
 pragma solidity 0.8.22;
 
 contract Error {
-    // throw message if x < 10
+    // throw message if x < 10; costs 730 gas
     function requireFoo(uint x) external pure returns (uint) {
         require(x > 10, "wrong! x < 10");
     }
 
-    // do the same as requireFoo. revert is better for conditional branching
+    // do the same as requireFoo. revert is better for conditional branching; execution costs 799 gas
     function revertFoo(uint x) external pure returns (uint) {
         if (x < 10) {
             revert("wrong! x < 10");
@@ -15,7 +15,7 @@ contract Error {
     }
 
     error Err(uint, bytes);
-    // do the same as functions above, but cheaper (spend less gas)
+    // do the same as functions above, but cheaper (spend less gas); costs 791 gas
     function customErrorFoo(uint x) external pure returns (uint) {
         if (x < 10) {
             revert Err(x, "wrong! x < 10");

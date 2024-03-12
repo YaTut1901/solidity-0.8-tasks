@@ -25,7 +25,7 @@ contract Array {
     }
 
     function pop() external {
-        nums.pop(); // nums = [0, 2, 3]
+        nums.pop(); // nums = [0, 2, 3]; function drop last element in array
     }
 
     function length() external view returns(uint) {

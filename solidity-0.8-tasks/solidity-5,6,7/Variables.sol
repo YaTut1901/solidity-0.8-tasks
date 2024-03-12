@@ -10,7 +10,7 @@ contract StateVariables {
         uint local = 456;
 
         local++;
-        // returns values of global variables
+        // returns values of global variables, msg.sender is an address of wallet who deployed the contract
         return (block.timestamp, msg.sender, block.number);
     }
 }
