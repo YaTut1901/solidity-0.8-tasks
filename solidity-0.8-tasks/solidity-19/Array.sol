@@ -21,7 +21,7 @@ contract Array {
     }
 
     function delet() external {
-        delete nums[0]; // nums = [0, 2, 3, 4]; delete keyword clean element with index and set it to default value
+        delete nums[0]; // nums = [0, 2, 3, 4]; "delete" keyword clear element with index and set it to default value
     }
 
     function pop() external {
