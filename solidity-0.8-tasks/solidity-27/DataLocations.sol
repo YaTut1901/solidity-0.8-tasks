@@ -24,5 +24,18 @@ contract DataLocations {
         _str.foo = 12;
     }
 
+    // "memory":
+    // It can be used for both function declaration parameters as well as within the function logic
+    // It is mutable (it can be overwritten and changed)
+    // It is non-persistent (the value does not persist after the transaction has completed)
+
+    // "calldata":
+    // It can only be used for function declaration parameters (and not function logic)
+    // It is immutable (it can't be overwritten and changed)
+    // It must be used for dynamic parameters of an external function
+    // It is non-persistent (the value does not persist after the transaction has completed)
+
+
+
     // use calldata for func parameters, storage for writing data, memory for reading
 }
