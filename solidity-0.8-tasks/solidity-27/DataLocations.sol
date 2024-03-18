@@ -7,7 +7,7 @@ contract DataLocations {
         string text;
     }
 
-    mapping(address => MyStruct) structs;
+    mapping(address => MyStruct) structs; // defined as "storage" by default
 
     // using memory identifier in function args is needed for array, struct, string, mapping
     // "calldata" is used when we want to use variable from transaction memory directly
